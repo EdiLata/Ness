@@ -1,0 +1,47 @@
+<div class="login-body">
+  <div class="centered">
+    <div class="login-card card">
+      <div class="login-card-head">
+        <div class="noa-image">
+        </div>
+      </div>
+      <div class="login-card-body">
+        <p class="hello">
+          Hello there!
+        </p>
+        <p class="help-text">
+          Please enter the passcode that
+          your teacher has given you
+        </p>
+        <div>
+          <form>
+            <div class="code-input-div">
+              <input id="inputOne" [type]="hide ? 'password' : 'text'" class="code-input" type="password" name="codeInput" maxlength="1" (keyup)="onDigitInput($event)" required>
+              <input class="code-input" [type]="hide ? 'password' : 'text'" type="password" name="codeInput" maxlength="1" (keyup)="onDigitInput($event)" required>
+              <input class="code-input" [type]="hide ? 'password' : 'text'" type="password" name="codeInput" maxlength="1" (keyup)="onDigitInput($event)" required>
+              <input class="code-input" [type]="hide ? 'password' : 'text'" type="password" name="codeInput" maxlength="1" (keyup)="onDigitInput($event)" required>
+              <input class="code-input" [type]="hide ? 'password' : 'text'" type="password" name="codeInput" maxlength="1" (keyup)="onDigitInput($event)" required>
+              <input class="code-input" [type]="hide ? 'password' : 'text'" type="password" name="codeInput" maxlength="1" (keyup)="onDigitInput($event)" required>
+
+              <span class="show-password-btn" id="toggle-password" (click)="hide = !hide">
+                                <span class="button-link show-eye" *ngIf="hide === true">
+
+                                </span>
+                                <span class="button-link close-eye" *ngIf="hide === false">
+
+                                </span>
+                                <label class="sh-lable" *ngIf="hide === true">Show</label>
+                                <label class="sh-lable" *ngIf="hide === false">Hide</label>
+                            </span>
+            </div>
+            <button type="submit" class="btn btn-pri btn-next mr-2">Go</button>
+          </form>
+        </div>
+        <hr>
+        <p class="school-name">
+          Establishment 102 (SL 1)
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

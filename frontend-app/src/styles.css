@@ -1,1 +1,1710 @@
-/* You can add global styles to this file, and also import other style files */
+/* Main colours */
+/* Supporting colours */
+/* Structural colours */
+/* Common dimensions */
+/* Modal variables */
+/* Shadow to simulate border width increase */
+/*Card variables*/
+/* Learner portal variables */
+/* Establishment hub portal home page variables */
+/* Practice cards variables*/
+/* Basic CSS for an arrow - will need to apply appropriate transform e.g. transform: rotate(-135deg); */
+/* Modal mixins */
+@import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,700');
+
+.cursor-default {
+  cursor: default !important;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.cursor-none {
+  cursor: none !important;
+}
+
+.margin-auto {
+  margin-left: auto !important;
+}
+
+/* Main colours */
+/* Supporting colours */
+/* Structural colours */
+/* Common dimensions */
+/* Modal variables */
+/* Shadow to simulate border width increase */
+/*Card variables*/
+/* Learner portal variables */
+/* Establishment hub portal home page variables */
+/* Practice cards variables*/
+/* Main colours */
+/* Supporting colours */
+/* Structural colours */
+/* Common dimensions */
+/* Modal variables */
+/* Shadow to simulate border width increase */
+/*Card variables*/
+/* Learner portal variables */
+/* Establishment hub portal home page variables */
+/* Practice cards variables*/
+/* Main colours */
+/* Supporting colours */
+/* Structural colours */
+/* Common dimensions */
+/* Modal variables */
+/* Shadow to simulate border width increase */
+/*Card variables*/
+/* Learner portal variables */
+/* Establishment hub portal home page variables */
+/* Practice cards variables*/
+.main-content .page-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-left: 4%;
+}
+
+.main-content .help-text {
+  font-size: 1.1em;
+  font-weight: normal;
+  margin-left: 4%;
+}
+
+.main-content .help-panel {
+  min-height: 10rem;
+  border: 1px solid #619E9E;
+  border-radius: 0.425rem;
+  margin: 1px auto;
+  background-color: #FFF;
+  box-shadow: 0 3.6px 6.6px rgba(0, 0, 0, 0.22), 0 2.8px 8.4px rgba(0, 0, 0, 0.18);
+}
+
+.main-content .help-panel-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-left: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.main-content .help-panel-links {
+  margin-left: 1.3rem;
+  margin-right: 1.3rem;
+  margin-bottom: 1.4rem;
+  margin-top: 0.5rem;
+}
+
+.main-content .help-panel-links a {
+  text-decoration: none !important;
+}
+
+.main-content .help-panel-links .link-widget {
+  min-height: 4rem;
+  border: 3px solid #E27952;
+  margin: 0.6rem;
+  border-radius: 0.425rem;
+  color: #BF4612;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 3.6px 6.6px rgba(0, 0, 0, 0.4), 0 2.8px 6.4px rgba(0, 0, 0, 0.22);
+}
+
+.main-content .help-panel-links .link-widget p {
+  margin-top: 0.7em;
+}
+
+.main-content .help-panel-links .link-widget:hover, .main-content .help-panel-links .link-widget:active, .main-content .help-panel-links .link-widget.selected {
+  border-width: 3px;
+  border-color: #BF4612;
+}
+
+.main-content .help-panel-links .link-widget:active {
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.main-content .help-panel-links .link-widget.selected {
+  border-width: 3px;
+  box-shadow: 0 3.3px 6px rgba(0, 0, 0, 0.7), 0 2.8px 6px rgba(0, 0, 0, 0.7);
+}
+
+.main-content .familiarisation-view .practice-cards {
+  width: 1024px;
+}
+
+.main-content .familiarisation-view .practice-cards-2inRow .row {
+  max-width: 41.625rem;
+}
+
+.main-content .familiarisation-view .practice-cards-3inRow .row {
+  max-width: 61.25rem;
+}
+
+.main-content .familiarisation-view .practice-cards .card {
+  margin-top: 1rem;
+  margin-left: 1.1rem;
+}
+
+.main-content .familiarisation-view .practice-cards a {
+  text-decoration: none;
+}
+
+.main-content .familiarisation-view .practice-cards .practice-card-selectable {
+  min-width: 19.25rem;
+  max-width: 19.25rem;
+  min-height: 11.5rem;
+  max-height: 11.5rem;
+  box-shadow: 0 3.6px 6.6px rgba(0, 0, 0, 0.4), 0 2.8px 6.4px rgba(0, 0, 0, 0.22);
+  font-size: 1em;
+  border-radius: 0.5rem;
+  border-color: #EF8354;
+  cursor: pointer;
+  text-align: center;
+  border-width: 3px;
+}
+
+.main-content .familiarisation-view .practice-cards .practice-card-selectable:hover {
+  border-width: 5px;
+  border-color: #BF4612;
+}
+
+.main-content .familiarisation-view .practice-cards .practice-card-selectable:active {
+  border-width: 4px;
+  border-color: #BF4612;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.main-content .familiarisation-view .practice-cards .practice-card-selectable.selected {
+  border-width: 4px;
+  border-color: #BF4612;
+  box-shadow: 0 3.3px 6px rgba(0, 0, 0, 0.7), 0 2.8px 6px rgba(0, 0, 0, 0.7);
+}
+
+.main-content .familiarisation-view .practice-cards .practice-card-content {
+  min-width: 50%;
+  max-width: 80%;
+  margin: auto;
+  padding-top: 5%;
+}
+
+.main-content .familiarisation-view .practice-cards .practice-card-icon {
+  height: 4.625rem;
+  margin: auto;
+}
+
+.main-content .familiarisation-view .practice-cards .practice-card-icon-mathsDragging {
+  background: url("assets/images/drag-math.svg") no-repeat;
+  width: 50%;
+}
+
+.main-content .familiarisation-view .practice-cards .practice-card-icon-mathsTyping {
+  background: url("assets/images/typing-math.svg") no-repeat;
+  width: 75%;
+}
+
+.main-content .familiarisation-view .practice-cards .practice-card-icon-mathsRuler {
+  background: url("assets/images/ruler-math.svg") no-repeat;
+  width: 60%;
+  height: 1.875rem;
+  margin-top: 15%;
+}
+
+.main-content .familiarisation-view .practice-cards .practice-card-icon-mathsClicking {
+  background: url("assets/images/clicking-math.svg") no-repeat;
+  width: 45%;
+}
+
+.main-content .familiarisation-view .practice-cards .practice-card-icon-readingDragging {
+  background: url("assets/images/drag-reading.svg") no-repeat;
+  width: 50%;
+}
+
+.main-content .familiarisation-view .practice-cards .practice-card-icon-readingTyping {
+  background: url("assets/images/typing-reading.svg") no-repeat;
+  width: 75%;
+}
+
+.main-content .familiarisation-view .practice-cards .practice-card-icon-readingText {
+  background: url("assets/images/text-reading.svg") no-repeat;
+  width: 36%;
+  height: 3.375rem;
+}
+
+.main-content .familiarisation-view .practice-cards .practice-card-icon-readingClicking {
+  background: url("assets/images/clicking-reading.svg") no-repeat;
+  width: 45%;
+}
+
+.main-content .familiarisation-view .practice-cards .practice-card-text {
+  padding-top: 5%;
+  color: #BF4612;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Main colours */
+/* Supporting colours */
+/* Structural colours */
+/* Common dimensions */
+/* Modal variables */
+/* Shadow to simulate border width increase */
+/*Card variables*/
+/* Learner portal variables */
+/* Establishment hub portal home page variables */
+/* Practice cards variables*/
+/* Main colours */
+/* Supporting colours */
+/* Structural colours */
+/* Common dimensions */
+/* Modal variables */
+/* Shadow to simulate border width increase */
+/*Card variables*/
+/* Learner portal variables */
+/* Establishment hub portal home page variables */
+/* Practice cards variables*/
+/* Basic CSS for an arrow - will need to apply appropriate transform e.g. transform: rotate(-135deg); */
+/* Modal mixins */
+.cursor-default {
+  cursor: default !important;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.cursor-none {
+  cursor: none !important;
+}
+
+.margin-auto {
+  margin-left: auto !important;
+}
+
+/* Typography */
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: Muli, Arial, sans-serif;
+  color: #3C3C3B;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+html {
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Muli;
+}
+
+.modal {
+  text-align: center;
+  padding: 0 !important;
+  color: #FFF;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  width: 35%;
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+/* Main colours */
+/* Supporting colours */
+/* Structural colours */
+/* Common dimensions */
+/* Modal variables */
+/* Shadow to simulate border width increase */
+/*Card variables*/
+/* Learner portal variables */
+/* Establishment hub portal home page variables */
+/* Practice cards variables*/
+.nfer-able-player .able-status-bar {
+  padding: .1em .2em .25em;
+}
+
+.navbar {
+  height: 4.5rem;
+}
+
+.navbar-logo {
+  height: 3rem;
+  width: 6rem;
+  padding-left: .3rem;
+}
+
+.navbar-bg {
+  background-color: #016060;
+}
+
+.navbar-bg .navbar-item {
+  color: #FFF;
+  font-weight: bold;
+  font-size: 1.2em;
+  display: inline-block;
+}
+
+.main-content {
+  min-height: calc(100vh - 4.5rem - 2.5rem);
+  background-color: #F5F5F3;
+}
+
+.main-content .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-content .confirm-card {
+  max-width: 39.5rem;
+  min-height: 24rem;
+  border: 1.5px solid;
+  background-color: #FFF;
+  border-radius: 0.425rem;
+  border-color: #619E9E;
+  box-shadow: 0 25.6px 57.6px rgba(0, 0, 0, 0.22), 0 4.8px 14.4px rgba(0, 0, 0, 0.18);
+}
+
+.main-content .confirm-card .hello-icon {
+  width: 7.5rem;
+  height: 7.2rem;
+  margin: 1% auto;
+  margin-top: 1.5rem;
+  position: relative;
+  background-image: url("assets/images/hello-reading.svg");
+}
+
+.main-content .confirm-card-head {
+  height: 28%;
+  background-color: #FFF;
+  border-radius: inherit;
+}
+
+.main-content .confirm-card-body {
+  text-align: center;
+}
+
+.main-content .confirm-card-body p {
+  padding: 0;
+  margin: 0;
+}
+
+.main-content .confirm-card-body .hello {
+  font-size: 1.875em;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.main-content .confirm-card-body .help-text {
+  width: 65%;
+  margin: 1% auto !important;
+  position: relative;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.main-content .confirm-card-body .confirmation-buttons {
+  margin-top: 5%;
+}
+
+.main-content .confirm-card-body .confirmation-buttons .btn {
+  width: 12.75rem !important;
+}
+
+.main-content .confirm-card-body .confirmation-buttons .btn-next {
+  margin-left: 10%;
+}
+
+.main-content .assessment-view {
+  padding-top: 3rem;
+}
+
+.main-content .assessment-view .test-panel {
+  margin-top: 3.5rem;
+}
+
+.main-content .assessment-view .test-panel-bg {
+  min-height: 4rem;
+  margin: auto;
+  border-radius: 0.425rem 0.425rem 0 0;
+  background-image: url("assets/images/bg-bar-assessment-reading.svg");
+  border: 1px solid #619E9E;
+  border-bottom: 0;
+}
+
+.main-content .assessment-view .test-panel-bg p {
+  margin-left: 0.75rem;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding-top: 0.5em;
+}
+
+.main-content .assessment-view .test-panel-body {
+  min-height: 12.5rem;
+  background: #FFF;
+  margin: auto;
+  border-radius: 0px 0px 0.425rem 0.425rem;
+  border: 1px solid #619E9E;
+  border-top: 0;
+}
+
+.main-content .assessment-view .test-panel-body .test-row {
+  margin-left: 0.15rem;
+  margin-bottom: 0.8rem;
+}
+
+.main-content .assessment-view .test-panel-body .test-container:not(:first-child) {
+  margin-top: 0.7rem;
+  border-left: 1px solid #B2B2B1;
+}
+
+.main-content .assessment-view .test-panel-body .test-container:not(:first-child) .test-details {
+  margin-left: 1em;
+}
+
+.main-content .assessment-view .test-panel-body .test-container:first-child {
+  margin-top: 0.7rem;
+  margin-right: -2em;
+}
+
+.main-content .assessment-view .test-panel-body .test-details:not(:first-child) {
+  margin-left: 2em;
+}
+
+.main-content .assessment-view .test-panel-body .test-title {
+  width: 70%;
+}
+
+.main-content .assessment-view .test-panel-body .test-title-icon {
+  display: flex;
+  align-items: center;
+}
+
+.main-content .assessment-view .test-panel-body .test-status-icon {
+  width: 20%;
+  height: 60px;
+}
+
+.main-content .assessment-view .test-panel-body .test-status-icon.done {
+  background: url("assets/images/done.svg") no-repeat;
+}
+
+.main-content .assessment-view .test-panel-body .test-status-icon.paused {
+  background: url("assets/images/pause.svg") no-repeat;
+}
+
+.main-content .assessment-view .test-panel-body .test-status-icon.start-enabled {
+  background: url("assets/images/start-enabled.svg") no-repeat;
+}
+
+.main-content .assessment-view .test-panel-body .test-status-icon.start-disabled {
+  background: url("assets/images/start-disabled.svg") no-repeat;
+}
+
+.main-content .assessment-view .test-panel-body p {
+  margin: 0;
+}
+
+.main-content .assessment-view .test-panel-body p.test-part {
+  margin-top: 0.5em;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.main-content .assessment-view .test-panel-body p.test-name {
+  font-size: 1.5em;
+}
+
+.main-content .assessment-view .test-panel-body p.test-status {
+  margin-top: 1em;
+  font-size: 1em;
+}
+
+.main-content .assessment-view .test-panel-body p.test-action {
+  margin-top: 0.7em;
+  font-size: 1em;
+  margin-bottom: 0.7em;
+}
+
+.main-content .assessment-view .modal-backdrop.show {
+  background-color: rgba(236, 236, 235, 0.7) !important;
+}
+
+.main-content .assessment-view .modal-content {
+  background-color: #BF4612;
+  font-size: 1.8em;
+}
+
+.main-content .test-status-view .modal-complete .modal-content {
+  background-color: #016060;
+}
+
+.main-content .familiarisation-view .bread-crumb {
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  margin-left: 4%;
+}
+
+.main-content .familiarisation-view .bread-crumb .home-link {
+  color: #BF4612;
+  text-decoration: underline;
+}
+
+.main-content .familiarisation-view .bread-crumb .current-page {
+  font-size: 1em;
+  color: #3C3C3B;
+}
+
+.main-content .familiarisation-view .bread-crumb .current-page .chev-icon {
+  font-size: 0.8em;
+  color: #8C8C8C;
+}
+
+.main-content .familiarisation-view .page-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-left: 4%;
+}
+
+.main-content .familiarisation-view .help-text {
+  font-size: 1.1em;
+  font-weight: normal;
+  margin-left: 4%;
+}
+
+.main-content .familiarisation-view .buttons-div {
+  margin-left: 4%;
+  width: 890px;
+}
+
+.modal-backdrop {
+  background-color: #ececeb !important;
+}
+
+.modal-backdrop.show {
+  opacity: 0.7;
+}
+
+.modal-content {
+  background-color: #BF4612;
+  font-size: 1.8em;
+}
+
+.footer {
+  clear: both;
+  width: 100%;
+  min-height: 2.5rem;
+  background-color: #016060;
+  z-index: 1;
+  color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  position: relative;
+}
+
+/* Main colours */
+/* Supporting colours */
+/* Structural colours */
+/* Common dimensions */
+/* Modal variables */
+/* Shadow to simulate border width increase */
+/*Card variables*/
+/* Learner portal variables */
+/* Establishment hub portal home page variables */
+/* Practice cards variables*/
+/* Basic CSS for an arrow - will need to apply appropriate transform e.g. transform: rotate(-135deg); */
+/* Modal mixins */
+.cursor-default {
+  cursor: default !important;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.cursor-none {
+  cursor: none !important;
+}
+
+.margin-auto {
+  margin-left: auto !important;
+}
+
+/* Main colours */
+/* Supporting colours */
+/* Structural colours */
+/* Common dimensions */
+/* Modal variables */
+/* Shadow to simulate border width increase */
+/*Card variables*/
+/* Learner portal variables */
+/* Establishment hub portal home page variables */
+/* Practice cards variables*/
+/* Main colours */
+/* Supporting colours */
+/* Structural colours */
+/* Common dimensions */
+/* Modal variables */
+/* Shadow to simulate border width increase */
+/*Card variables*/
+/* Learner portal variables */
+/* Establishment hub portal home page variables */
+/* Practice cards variables*/
+/* Main colours */
+/* Supporting colours */
+/* Structural colours */
+/* Common dimensions */
+/* Modal variables */
+/* Shadow to simulate border width increase */
+/*Card variables*/
+/* Learner portal variables */
+/* Establishment hub portal home page variables */
+/* Practice cards variables*/
+.main-content .page-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-left: 4%;
+}
+
+.main-content .help-text {
+  font-size: 1.1em;
+  font-weight: normal;
+  margin-left: 4%;
+}
+
+.main-content .help-panel {
+  min-height: 10rem;
+  border: 1px solid #BE7EBE;
+  border-radius: 0.425rem;
+  margin: 1px auto;
+  background-color: #FFF;
+  box-shadow: 0 3.6px 6.6px rgba(0, 0, 0, 0.22), 0 2.8px 8.4px rgba(0, 0, 0, 0.18);
+}
+
+.main-content .help-panel-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-left: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.main-content .help-panel-links {
+  margin-left: 1.3rem;
+  margin-right: 1.3rem;
+  margin-bottom: 1.4rem;
+  margin-top: 0.5rem;
+}
+
+.main-content .help-panel-links a {
+  text-decoration: none !important;
+}
+
+.main-content .help-panel-links .link-widget {
+  min-height: 4rem;
+  border: 3px solid #E27952;
+  margin: 0.6rem;
+  border-radius: 0.425rem;
+  color: #BF4612;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 3.6px 6.6px rgba(0, 0, 0, 0.4), 0 2.8px 6.4px rgba(0, 0, 0, 0.22);
+}
+
+.main-content .help-panel-links .link-widget p {
+  margin-top: 0.7em;
+}
+
+.main-content .help-panel-links .link-widget:hover, .main-content .help-panel-links .link-widget:active, .main-content .help-panel-links .link-widget.selected {
+  border-width: 3px;
+  border-color: #BF4612;
+}
+
+.main-content .help-panel-links .link-widget:active {
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.main-content .help-panel-links .link-widget.selected {
+  border-width: 3px;
+  box-shadow: 0 3.3px 6px rgba(0, 0, 0, 0.7), 0 2.8px 6px rgba(0, 0, 0, 0.7);
+}
+
+.main-content .familiarisation-view .practice-cards {
+  width: 1024px;
+}
+
+.main-content .familiarisation-view .practice-cards-2inRow .row {
+  max-width: 41.625rem;
+}
+
+.main-content .familiarisation-view .practice-cards-3inRow .row {
+  max-width: 61.25rem;
+}
+
+.main-content .familiarisation-view .practice-cards .card {
+  margin-top: 1rem;
+  margin-left: 1.1rem;
+}
+
+.main-content .familiarisation-view .practice-cards a {
+  text-decoration: none;
+}
+
+.main-content .familiarisation-view .practice-cards .practice-card-selectable {
+  min-width: 19.25rem;
+  max-width: 19.25rem;
+  min-height: 11.5rem;
+  max-height: 11.5rem;
+  box-shadow: 0 3.6px 6.6px rgba(0, 0, 0, 0.4), 0 2.8px 6.4px rgba(0, 0, 0, 0.22);
+  font-size: 1em;
+  border-radius: 0.5rem;
+  border-color: #EF8354;
+  cursor: pointer;
+  text-align: center;
+  border-width: 3px;
+}
+
+.main-content .familiarisation-view .practice-cards .practice-card-selectable:hover {
+  border-width: 5px;
+  border-color: #BF4612;
+}
+
+.main-content .familiarisation-view .practice-cards .practice-card-selectable:active {
+  border-width: 4px;
+  border-color: #BF4612;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.main-content .familiarisation-view .practice-cards .practice-card-selectable.selected {
+  border-width: 4px;
+  border-color: #BF4612;
+  box-shadow: 0 3.3px 6px rgba(0, 0, 0, 0.7), 0 2.8px 6px rgba(0, 0, 0, 0.7);
+}
+
+.main-content .familiarisation-view .practice-cards .practice-card-content {
+  min-width: 50%;
+  max-width: 80%;
+  margin: auto;
+  padding-top: 5%;
+}
+
+.main-content .familiarisation-view .practice-cards .practice-card-icon {
+  height: 4.625rem;
+  margin: auto;
+}
+
+.main-content .familiarisation-view .practice-cards .practice-card-icon-mathsDragging {
+  background: url("assets/images/drag-math.svg") no-repeat;
+  width: 50%;
+}
+
+.main-content .familiarisation-view .practice-cards .practice-card-icon-mathsTyping {
+  background: url("assets/images/typing-math.svg") no-repeat;
+  width: 75%;
+}
+
+.main-content .familiarisation-view .practice-cards .practice-card-icon-mathsRuler {
+  background: url("assets/images/ruler-math.svg") no-repeat;
+  width: 60%;
+  height: 1.875rem;
+  margin-top: 15%;
+}
+
+.main-content .familiarisation-view .practice-cards .practice-card-icon-mathsClicking {
+  background: url("assets/images/clicking-math.svg") no-repeat;
+  width: 45%;
+}
+
+.main-content .familiarisation-view .practice-cards .practice-card-icon-readingDragging {
+  background: url("assets/images/drag-reading.svg") no-repeat;
+  width: 50%;
+}
+
+.main-content .familiarisation-view .practice-cards .practice-card-icon-readingTyping {
+  background: url("assets/images/typing-reading.svg") no-repeat;
+  width: 75%;
+}
+
+.main-content .familiarisation-view .practice-cards .practice-card-icon-readingText {
+  background: url("assets/images/text-reading.svg") no-repeat;
+  width: 36%;
+  height: 3.375rem;
+}
+
+.main-content .familiarisation-view .practice-cards .practice-card-icon-readingClicking {
+  background: url("assets/images/clicking-reading.svg") no-repeat;
+  width: 45%;
+}
+
+.main-content .familiarisation-view .practice-cards .practice-card-text {
+  padding-top: 5%;
+  color: #BF4612;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Main colours */
+/* Supporting colours */
+/* Structural colours */
+/* Common dimensions */
+/* Modal variables */
+/* Shadow to simulate border width increase */
+/*Card variables*/
+/* Learner portal variables */
+/* Establishment hub portal home page variables */
+/* Practice cards variables*/
+/* Main colours */
+/* Supporting colours */
+/* Structural colours */
+/* Common dimensions */
+/* Modal variables */
+/* Shadow to simulate border width increase */
+/*Card variables*/
+/* Learner portal variables */
+/* Establishment hub portal home page variables */
+/* Practice cards variables*/
+/* Basic CSS for an arrow - will need to apply appropriate transform e.g. transform: rotate(-135deg); */
+/* Modal mixins */
+.cursor-default {
+  cursor: default !important;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.cursor-none {
+  cursor: none !important;
+}
+
+.margin-auto {
+  margin-left: auto !important;
+}
+
+/* Typography */
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: Muli, Arial, sans-serif;
+  color: #3C3C3B;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+html {
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Muli;
+}
+
+.modal {
+  text-align: center;
+  padding: 0 !important;
+  color: #FFF;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  width: 35%;
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+/* Main colours */
+/* Supporting colours */
+/* Structural colours */
+/* Common dimensions */
+/* Modal variables */
+/* Shadow to simulate border width increase */
+/*Card variables*/
+/* Learner portal variables */
+/* Establishment hub portal home page variables */
+/* Practice cards variables*/
+.nfer-able-player .able-status-bar {
+  padding: .1em .2em .25em;
+}
+
+.navbar {
+  height: 4.5rem;
+}
+
+.navbar-logo {
+  height: 3rem;
+  width: 6rem;
+  padding-left: .3rem;
+}
+
+.navbar-bg {
+  background-color: #892E89;
+}
+
+.navbar-bg .navbar-item {
+  color: #FFF;
+  font-weight: bold;
+  font-size: 1.2em;
+  display: inline-block;
+}
+
+.main-content {
+  min-height: calc(100vh - 4.5rem - 2.5rem);
+  background-color: #F5F5F3;
+}
+
+.main-content .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-content .confirm-card {
+  max-width: 39.5rem;
+  min-height: 24rem;
+  border: 1.5px solid;
+  background-color: #FFF;
+  border-radius: 0.425rem;
+  border-color: #BE7EBE;
+  box-shadow: 0 25.6px 57.6px rgba(0, 0, 0, 0.22), 0 4.8px 14.4px rgba(0, 0, 0, 0.18);
+}
+
+.main-content .confirm-card .hello-icon {
+  width: 7.5rem;
+  height: 7.2rem;
+  margin: 1% auto;
+  margin-top: 1.5rem;
+  position: relative;
+  background-image: url("assets/images/hello-math.svg");
+}
+
+.main-content .confirm-card-head {
+  height: 28%;
+  background-color: #FFF;
+  border-radius: inherit;
+}
+
+.main-content .confirm-card-body {
+  text-align: center;
+}
+
+.main-content .confirm-card-body p {
+  padding: 0;
+  margin: 0;
+}
+
+.main-content .confirm-card-body .hello {
+  font-size: 1.875em;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.main-content .confirm-card-body .help-text {
+  width: 65%;
+  margin: 1% auto !important;
+  position: relative;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.main-content .confirm-card-body .confirmation-buttons {
+  margin-top: 5%;
+}
+
+.main-content .confirm-card-body .confirmation-buttons .btn {
+  width: 12.75rem !important;
+}
+
+.main-content .confirm-card-body .confirmation-buttons .btn-next {
+  margin-left: 10%;
+}
+
+.main-content .assessment-view {
+  padding-top: 3rem;
+}
+
+.main-content .assessment-view .test-panel {
+  margin-top: 3.5rem;
+}
+
+.main-content .assessment-view .test-panel-bg {
+  min-height: 4rem;
+  margin: auto;
+  border-radius: 0.425rem 0.425rem 0 0;
+  background-image: url("assets/images/bg-bar-assessment-math.svg");
+  border: 1px solid #BE7EBE;
+  border-bottom: 0;
+}
+
+.main-content .assessment-view .test-panel-bg p {
+  margin-left: 0.75rem;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding-top: 0.5em;
+}
+
+.main-content .assessment-view .test-panel-body {
+  min-height: 12.5rem;
+  background: #FFF;
+  margin: auto;
+  border-radius: 0px 0px 0.425rem 0.425rem;
+  border: 1px solid #BE7EBE;
+  border-top: 0;
+}
+
+.main-content .assessment-view .test-panel-body .test-row {
+  margin-left: 0.15rem;
+  margin-bottom: 0.8rem;
+}
+
+.main-content .assessment-view .test-panel-body .test-container:not(:first-child) {
+  margin-top: 0.7rem;
+  border-left: 1px solid #B2B2B1;
+}
+
+.main-content .assessment-view .test-panel-body .test-container:not(:first-child) .test-details {
+  margin-left: 1em;
+}
+
+.main-content .assessment-view .test-panel-body .test-container:first-child {
+  margin-top: 0.7rem;
+  margin-right: -2em;
+}
+
+.main-content .assessment-view .test-panel-body .test-details:not(:first-child) {
+  margin-left: 2em;
+}
+
+.main-content .assessment-view .test-panel-body .test-title {
+  width: 70%;
+}
+
+.main-content .assessment-view .test-panel-body .test-title-icon {
+  display: flex;
+  align-items: center;
+}
+
+.main-content .assessment-view .test-panel-body .test-status-icon {
+  width: 20%;
+  height: 60px;
+}
+
+.main-content .assessment-view .test-panel-body .test-status-icon.done {
+  background: url("assets/images/done.svg") no-repeat;
+}
+
+.main-content .assessment-view .test-panel-body .test-status-icon.paused {
+  background: url("assets/images/pause.svg") no-repeat;
+}
+
+.main-content .assessment-view .test-panel-body .test-status-icon.start-enabled {
+  background: url("assets/images/start-enabled.svg") no-repeat;
+}
+
+.main-content .assessment-view .test-panel-body .test-status-icon.start-disabled {
+  background: url("assets/images/start-disabled.svg") no-repeat;
+}
+
+.main-content .assessment-view .test-panel-body p {
+  margin: 0;
+}
+
+.main-content .assessment-view .test-panel-body p.test-part {
+  margin-top: 0.5em;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.main-content .assessment-view .test-panel-body p.test-name {
+  font-size: 1.5em;
+}
+
+.main-content .assessment-view .test-panel-body p.test-status {
+  margin-top: 1em;
+  font-size: 1em;
+}
+
+.main-content .assessment-view .test-panel-body p.test-action {
+  margin-top: 0.7em;
+  font-size: 1em;
+  margin-bottom: 0.7em;
+}
+
+.main-content .assessment-view .modal-backdrop.show {
+  background-color: rgba(236, 236, 235, 0.7) !important;
+}
+
+.main-content .assessment-view .modal-content {
+  background-color: #BF4612;
+  font-size: 1.8em;
+}
+
+.main-content .test-status-view .modal-complete .modal-content {
+  background-color: #016060;
+}
+
+.main-content .familiarisation-view .bread-crumb {
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  margin-left: 4%;
+}
+
+.main-content .familiarisation-view .bread-crumb .home-link {
+  color: #BF4612;
+  text-decoration: underline;
+}
+
+.main-content .familiarisation-view .bread-crumb .current-page {
+  font-size: 1em;
+  color: #3C3C3B;
+}
+
+.main-content .familiarisation-view .bread-crumb .current-page .chev-icon {
+  font-size: 0.8em;
+  color: #8C8C8C;
+}
+
+.main-content .familiarisation-view .page-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-left: 4%;
+}
+
+.main-content .familiarisation-view .help-text {
+  font-size: 1.1em;
+  font-weight: normal;
+  margin-left: 4%;
+}
+
+.main-content .familiarisation-view .buttons-div {
+  margin-left: 4%;
+  width: 890px;
+}
+
+.modal-backdrop {
+  background-color: #ececeb !important;
+}
+
+.modal-backdrop.show {
+  opacity: 0.7;
+}
+
+.modal-content {
+  background-color: #BF4612;
+  font-size: 1.8em;
+}
+
+.footer {
+  clear: both;
+  width: 100%;
+  min-height: 2.5rem;
+  background-color: #892E89;
+  z-index: 1;
+  color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  position: relative;
+}
+
+.cursor-default {
+  cursor: default !important;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.cursor-none {
+  cursor: none !important;
+}
+
+.margin-auto {
+  margin-left: auto !important;
+}
+
+.cursor-default {
+  cursor: default !important;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.cursor-none {
+  cursor: none !important;
+}
+
+.margin-auto {
+  margin-left: auto !important;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: Muli, Arial, sans-serif;
+  color: #3c3c3b;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+html {
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Muli;
+}
+
+.modal {
+  text-align: center;
+  padding: 0 !important;
+  color: #fff;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  width: 35%;
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.cursor-default {
+  cursor: default !important;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.cursor-none {
+  cursor: none !important;
+}
+
+.margin-auto {
+  margin-left: auto !important;
+}
+
+.btn {
+  border-radius: 21px;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 6px 17px;
+  text-transform: none;
+  border: 3px solid;
+  margin: 0;
+  transition: .2s linear;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, .4);
+}
+
+.btn:active {
+  box-shadow: none;
+}
+
+.btn-pri {
+  border-color: #ef8354;
+  background-color: #bf4612;
+}
+
+.btn-pri, .btn-pri:hover, .btn-pri:active {
+  color: #fff !important;
+}
+
+.btn-pri:not([disabled]):hover, .btn-pri:not([disabled]):focus {
+  box-shadow: 0 0 0 1px #ef8354;
+  background-color: #70290a;
+}
+
+.btn-pri:not([disabled]):active, .btn-pri:not([disabled]).pressed {
+  background-color: #bf4612;
+  border-color: #ef8354;
+  box-shadow: inset 2px 3px 4px black;
+}
+
+.btn-sec {
+  border-color: #bf4612;
+  background-color: #fff;
+  color: #bf4612;
+}
+
+.btn-sec, .btn-sec:hover, .btn-sec:active {
+  color: #bf4612;
+}
+
+.btn-sec:not([disabled]):hover, .btn-sec:not([disabled]):focus {
+  box-shadow: 0 0 0 1px #ef8354;
+  background-color: #fff;
+  border: .2em solid;
+}
+
+.btn-sec:not([disabled]):active, .btn-sec:not([disabled]).pressed {
+  border-color: #bf4612;
+  background-color: #fff;
+  box-shadow: inset 3px 7px 10px -5px rgba(0, 0, 0, .8), 0 10px 10px -5px rgba(0, 0, 0, .8), 7px 0 10px -7px rgba(0, 0, 0, .8);
+}
+
+.btn-ok {
+  color: #70290a;
+  background-color: #fff;
+  border-color: #016060 !important;
+}
+
+.btn-ok::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  display: inline-block;
+  content: ">";
+  margin-left: 17px;
+}
+
+.btn-ok, .btn-ok:hover, .btn-ok:active {
+  color: #bf4612;
+}
+
+.btn-ok:not([disabled]):hover, .btn-ok:not([disabled]):focus {
+  box-shadow: 0 0 0 1px #016060;
+  background-color: #fff;
+  border: .2em solid;
+}
+
+.btn-ok:not([disabled]):active, .btn-ok:not([disabled]).pressed {
+  border-color: #016060;
+  background-color: #fff;
+  box-shadow: inset 3px 7px 10px -5px rgba(0, 0, 0, .9), 0 10px 10px -5px rgba(0, 0, 0, .9), 7px 0 10px -7px rgba(0, 0, 0, .9);
+}
+
+.btn-no {
+  color: #70290a;
+  background-color: #fff;
+  border-color: #f4c77f !important;
+}
+
+.btn-no::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  display: inline-block;
+  content: ">";
+  margin-left: 17px;
+}
+
+.btn-no, .btn-no:hover, .btn-no:active {
+  color: #bf4612;
+}
+
+.btn-no:not([disabled]):hover, .btn-no:not([disabled]):focus {
+  box-shadow: 0 0 0 1px #f4c77f;
+  background-color: #fff;
+  border: .2em solid;
+}
+
+.btn-no:not([disabled]):active, .btn-no:not([disabled]).pressed {
+  border-color: #f4c77f;
+  background-color: #fff;
+  box-shadow: inset 3px 7px 10px -5px rgba(0, 0, 0, .9), 0 10px 10px -5px rgba(0, 0, 0, .9), 7px 0 10px -7px rgba(0, 0, 0, .9);
+}
+
+.btn-next:not([disabled]):hover:after, .btn-next:not([disabled]):focus:after {
+  transform: translateX(5.66667px);
+}
+
+.btn-next:not([disabled]):hover:after, .btn-next:not([disabled]):focus:after {
+  transform: translateX(5.66667px);
+}
+
+.btn-prev:not([disabled]):hover:before, .btn-prev:not([disabled]):focus:before {
+  transform: translateX(-5.66667px);
+}
+
+.btn-next:after, .btn-prev:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  display: inline-block;
+  transition: transform .2s linear;
+}
+
+.btn-next:after {
+  content: "\276F\276F";
+  margin-left: 17px;
+}
+
+.btn-prev:before {
+  content: "";
+  margin-right: 17px;
+}
+
+.login-body {
+  width: 100%;
+  height: 100vh;
+  background-size: 100vw auto !important;
+  background-image: url("assets/images/login-background.svg");
+}
+
+.modal-backdrop {
+  background-color: #000;
+}
+
+.modal-backdrop.show {
+  opacity: .5;
+}
+
+.modal-content {
+  background-color: #70290a;
+}
+
+.modal-error {
+  background-color: #70290a !important;
+}
+
+.modal ul {
+  list-style: none;
+  padding-left: 1em !important;
+  margin-bottom: 0 !important;
+  font-size: 1.8em;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login-card {
+  width: 39rem;
+  min-height: 31.3rem;
+  background-color: #f5f5f3;
+  border-radius: .625rem;
+  box-shadow: 0 25.6px 57.6px rgba(0, 0, 0, .22), 0 4.8px 14.4px rgba(0, 0, 0, .18);
+}
+
+.login-card-head {
+  height: 28%;
+  background-color: #fff;
+  border-radius: inherit;
+}
+
+.login-card-head .noa-image {
+  width: 12.65rem;
+  height: 5.665rem;
+  margin: 4% auto;
+  position: relative;
+  background-image: url("assets/images/noa-logo.svg");
+}
+
+.login-card-validation.validation-summary-errors {
+  max-width: 66%;
+  position: relative;
+  padding: .5rem .25rem !important;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  margin: 2% auto !important;
+  border-radius: 0 !important;
+  color: #fff;
+  font-weight: bold;
+  background-color: #70290a;
+  font-size: 1em;
+  text-align: left;
+}
+
+.login-card-validation ul {
+  list-style: none;
+  padding-left: 1em !important;
+  margin-bottom: 0 !important;
+}
+
+.login-card-validation ul li {
+  display: table-row;
+}
+
+.login-card-validation ul li::before {
+  min-width: 2rem;
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  color: #f4c77f;
+  font-size: 1.4em;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+  padding-right: 1rem;
+}
+
+.login-card-body {
+  text-align: center;
+}
+
+.login-card-body p {
+  padding: 0;
+  margin: 0;
+}
+
+.login-card-body .hello {
+  font-family: Muli;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.login-card-body .help-text {
+  width: 60%;
+  margin: 1% auto !important;
+  position: relative;
+  font-family: Muli;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.login-card-body .code-input-div {
+  margin: 2% auto !important;
+  display: flex;
+  text-align: center;
+  border: 1px solid #5c5c5c;
+  padding: .5rem;
+  max-width: 66%;
+}
+
+.login-card-body .code-input {
+  background-color: transparent;
+  border: none;
+  border-bottom: .185rem solid #b2b2b1;
+  display: inline-block;
+  font-size: 1.5em;
+  margin: 0 5px;
+  min-width: 12.5%;
+  max-width: 12.5%;
+  height: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.login-card-body .code-input:focus {
+  border: 1.5px solid #bf4612;
+  border-bottom: .185rem solid #3c3c3b;
+  outline: none !important;
+  box-shadow: 0 1.6px 5.6px #bf4615;
+}
+
+.login-card-body svg {
+  fill: #bf4612;
+}
+
+.login-card-body .show-password-btn {
+  color: #bf4612;
+  font-size: .8em;
+  text-decoration: underline;
+  text-align: center;
+  margin-left: 8px;
+  margin-top: 5px;
+}
+
+.login-card-body .show-password-btn .button-link {
+  width: 100%;
+  height: 50%;
+  display: block;
+  margin-left: 15%;
+}
+
+.login-card-body span label {
+  display: block;
+  font-weight: bold;
+}
+
+.login-card-body hr {
+  width: 80%;
+  margin-left: 10%;
+  background-color: #b2b2b1;
+}
+
+.login-card-body .school-name {
+  color: #000;
+  font-size: 1.2em;
+  margin-bottom: 5%;
+}
+
+.show-eye {
+  background: url("assets/images/open-eye.svg") no-repeat;
+}
+
+.close-eye {
+  margin-left: 10% !important;
+  background: url("assets/images/close-eye.svg") no-repeat;
+}
+
+.copyright-link {
+  color: #fff !important;
+}
+
+.btn-pri {
+  border-color: #ef8354!important;
+  background-color: #bf4612!important;
+}
+
+.btn {
+  border-radius: 21px!important;
+  font-size: 1rem!important;
+  font-weight: bold!important;
+  padding: 6px 17px!important;
+  text-transform: none!important;
+  border: 3px solid #ef8354!important;
+  margin: 0!important;
+  transition: .2s linear!important;
+  box-shadow: 0 2px 2px rgb(0 0 0 / 40%)!important;
+}
+
+.card {
+  --bs-card-bg: #E5E5E5!important;
+}
