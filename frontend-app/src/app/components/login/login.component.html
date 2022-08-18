@@ -14,14 +14,18 @@
           your teacher has given you
         </p>
         <div>
-          <form>
+          <div *ngIf="shortPassCode > 0" class="login-card-validation validation-summary-errors" data-valmsg-summary="true"><ul><li>Please enter full passcode</li>
+          </ul></div>
+          <div *ngIf="wrongPassCode > 0" class="login-card-validation validation-summary-errors" data-valmsg-summary="true"><ul><li>Invalid passcode</li>
+          </ul></div>
+          <form [formGroup]="loginForm">
             <div class="code-input-div">
-              <input id="inputOne" [type]="hide ? 'password' : 'text'" class="code-input" type="password" name="codeInput" maxlength="1" (keyup)="onDigitInput($event)" required>
-              <input class="code-input" [type]="hide ? 'password' : 'text'" type="password" name="codeInput" maxlength="1" (keyup)="onDigitInput($event)" required>
-              <input class="code-input" [type]="hide ? 'password' : 'text'" type="password" name="codeInput" maxlength="1" (keyup)="onDigitInput($event)" required>
-              <input class="code-input" [type]="hide ? 'password' : 'text'" type="password" name="codeInput" maxlength="1" (keyup)="onDigitInput($event)" required>
-              <input class="code-input" [type]="hide ? 'password' : 'text'" type="password" name="codeInput" maxlength="1" (keyup)="onDigitInput($event)" required>
-              <input class="code-input" [type]="hide ? 'password' : 'text'" type="password" name="codeInput" maxlength="1" (keyup)="onDigitInput($event)" required>
+              <input formControlName="input1" id="inputOne" [type]="hide ? 'password' : 'text'" class="code-input" type="password" name="codeInput" maxlength="1" (keyup)="onDigitInput($event)">
+              <input formControlName="input2" class="code-input" [type]="hide ? 'password' : 'text'" type="password" name="codeInput" maxlength="1" (keyup)="onDigitInput($event)">
+              <input formControlName="input3" class="code-input" [type]="hide ? 'password' : 'text'" type="password" name="codeInput" maxlength="1" (keyup)="onDigitInput($event)">
+              <input formControlName="input4" class="code-input" [type]="hide ? 'password' : 'text'" type="password" name="codeInput" maxlength="1" (keyup)="onDigitInput($event)">
+              <input formControlName="input5" class="code-input" [type]="hide ? 'password' : 'text'" type="password" name="codeInput" maxlength="1" (keyup)="onDigitInput($event)">
+              <input formControlName="input6" class="code-input" [type]="hide ? 'password' : 'text'" type="password" name="codeInput" maxlength="1" (keyup)="onDigitInput($event)">
 
               <span class="show-password-btn" id="toggle-password" (click)="hide = !hide">
                                 <span class="button-link show-eye" *ngIf="hide === true">
@@ -34,12 +38,12 @@
                                 <label class="sh-lable" *ngIf="hide === false">Hide</label>
                             </span>
             </div>
-            <button type="submit" class="btn btn-pri btn-next mr-2">Go</button>
+            <button type="submit" class="btn btn-pri btn-next mr-2" (click)="submit()">Go</button>
           </form>
         </div>
         <hr>
         <p class="school-name">
-          Establishment 102 (SL 1)
+          Establishment 102 (SL1)
         </p>
       </div>
     </div>
