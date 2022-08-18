@@ -1,0 +1,26 @@
+<app-nav [userName]="getUserName()"></app-nav>
+<div>
+  <main role="main" class="main-content">
+    <div class="centered">
+      <div class="confirm-card card">
+        <div class="confirm-card-head">
+          <div class="hello-icon">
+          </div>
+        </div>
+        <div class="confirm-card-body">
+          <p class="hello">
+            Hello {{getUserName()}}!
+          </p>
+          <p class="help-text">
+            Press 'Continue' to see your test and practise the test
+          </p>
+          <div class="confirmation-buttons">
+            <a class="btn btn-sec mr-2" href="/login">I'm not {{getUserName()}}</a>
+            <a id="confirm-user" class="btn btn-pri btn-next mr-2" href="/tests">Continue</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<app-footer></app-footer>

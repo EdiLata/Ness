@@ -1,0 +1,21 @@
+<nav class="navbar navbar-bg navbar-expand-md">
+  <a class="navbar-brand" href="/home">
+    <img src="https://noa-cdn.dev.nfer.ac.uk/images/icons/noa-logo.svg" class="navbar-logo">
+  </a>
+  <div class="collapse navbar-collapse">
+    <div class="navbar-nav ml-auto">
+      <div class="navbar-item dropdown">
+        <div (click)="showLogout()" class="navbar-item cursor-pointer">
+          {{userName}}
+          <img src="assets/images/icon-user.svg" class="navbar-icon">
+        </div>
+        <div *ngIf="clicked === true" class="dropdown-menu show">
+          <a class="dropdown-item" href="/login">
+            <i class="fas fa-sign-out-alt"></i>
+            Logout
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
