@@ -14,6 +14,6 @@ export class TestsComponent implements OnInit {
   }
 
   getUserName() {
-    return this.loginService.getCurrentUser();
+    return this.loginService.user;
   }
 }

@@ -51,6 +51,7 @@ export class LoginComponent implements OnInit {
         this.loginForm.get('input4')?.value + this.loginForm.get('input5')?.value + this.loginForm.get('input6')?.value)) {
         this.loginService.setCurrentUser(this.loginForm.get('input1')?.value + this.loginForm.get('input2')?.value + this.loginForm.get('input3')?.value +
           this.loginForm.get('input4')?.value + this.loginForm.get('input5')?.value + this.loginForm.get('input6')?.value);
+        this.loginService.setLoggedIn(true);
         this.wrongPassCode = 0;
         this.router.navigate(['home']);
       }
@@ -68,7 +69,9 @@ export class LoginComponent implements OnInit {
   }
 
   openErrorDialog(): void {
-    this.dialog.open(LoginErrorComponent);
+    this.dialog.open(LoginErrorComponent, {
+      panelClass: 'custom-modal-container'
+    });
   }
 
   tooShortPassCode(): void {

@@ -1,13 +1,7 @@
-<div class="modal fade show" id="loginErrorModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-modal="true" style="display: block;">
-  <div class="modal-dialog">
-    <div class="modal-content rounded-0">
-      <div class="modal-body ml-4 mr-4" style="text-align: center;">
-        <div class="danger validation-summary-errors" data-valmsg-summary="true"><ul><li>We cannot log you in. Please ask your teacher for help.</li>
-        </ul></div>
-      </div>
-      <div class="m-auto pb-3">
-        <button id="modalOkButton" type="button" class="btn btn-ok" data-dismiss="modal" (click)="closeDialog()">OK</button>
-      </div>
-    </div>
+<div class="container">
+  <div class="text">
+    We cannot log you in. Please ask your teacher for help.
   </div>
+  <button type="button" class="btn btn-ok" (click)="closeDialog()">OK</button>
 </div>
+

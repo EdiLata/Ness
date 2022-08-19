@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import {LoginService} from "../../services/login.service";
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-maths-move-through',
+  templateUrl: './maths-move-through.component.html',
+  styleUrls: ['./maths-move-through.component.css']
 })
-export class HomeComponent implements OnInit {
+export class MathsMoveThroughComponent implements OnInit {
 
   constructor(private loginService: LoginService) { }
 
