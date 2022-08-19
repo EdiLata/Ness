@@ -1,0 +1,31 @@
+<app-nav [userName]="getUserName()"></app-nav>
+<div>
+  <main role="main" class="main-content">
+    <div class="familiarisation-view">
+      <div class="bread-crumb pt-3">
+        <a href="/tests" class="home-link pr-2">Home</a>
+        <span class="current-page"><i class="fa fa-chevron-right chev-icon pr-2" aria-hidden="true"></i>How to move through and answer questions on your Maths test.</span>
+      </div>
+      <div class="page-title pt-3">
+        How to move through and answer questions on your Maths test.
+      </div>
+      <div class="help-text pt-1">
+        Watch the video to learn how to move through and answer questions on your test.
+      </div>
+      <div class="col-10 offset-1 mt-4">
+        <iframe style="max-width: 703px;" width="100%" height="500px"
+                src="https://noa-cdn.dev.nfer.ac.uk/videos/Maths-navigation-familiarisation-video-V5-04.22.mp4"
+                allowfullscreen>
+        </iframe>
+      </div>
+
+      <div class="buttons-div pt-3 pb-4">
+        <a class="btn btn-sec btn-prev mr-2" href="/tests">Back</a>
+        <a id="mathsMoveThroughPractice" class="btn btn-pri btn-next mr-2 float-right" href="">
+          Try the practice questions
+        </a>
+      </div>
+    </div>
+  </main>
+</div>
+<app-footer></app-footer>

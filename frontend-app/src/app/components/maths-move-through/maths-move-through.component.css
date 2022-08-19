@@ -1,0 +1,11 @@
+.pr-2, .px-2 {
+  padding-right: 0.5rem!important;
+}
+
+.mt-4, .my-4 {
+  margin-top: 1.5rem!important;
+}
+
+.float-right {
+  float: right;
+}

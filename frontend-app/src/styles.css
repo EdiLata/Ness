@@ -1380,7 +1380,7 @@ body {
 }
 
 .btn-sec {
-  border-color: #bf4612;
+  border-color: #bf4612!important;
   background-color: #fff;
   color: #bf4612;
 }
@@ -1486,7 +1486,7 @@ body {
 }
 
 .btn-prev:before {
-  content: "";
+  content: "\f053";
   margin-right: 17px;
 }
 
@@ -1701,12 +1701,22 @@ body {
   font-weight: bold!important;
   padding: 6px 17px!important;
   text-transform: none!important;
-  border: 3px solid #ef8354!important;
+  border: 3px solid #ef8354;
   margin: 0!important;
   transition: .2s linear!important;
   box-shadow: 0 2px 2px rgb(0 0 0 / 40%)!important;
 }
 
+.custom-modal-container .mat-dialog-container {
+  padding: 16px 10px;
+  width: 500px;
+  height: 100%;
+  border-radius: 0;
+  max-height: calc(100vh - 50px);
+  overflow: hidden;
+  background-color: #70290a;
+  color: #fff;
+}
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

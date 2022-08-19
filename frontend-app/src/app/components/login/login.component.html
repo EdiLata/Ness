@@ -14,9 +14,9 @@
           your teacher has given you
         </p>
         <div>
-          <div *ngIf="shortPassCode > 0" class="login-card-validation validation-summary-errors" data-valmsg-summary="true"><ul><li>Please enter full passcode</li>
+          <div *ngIf="shortPassCode > 0" class="login-card-validation validation-summary-errors" data-valmsg-summary="true"><ul><li>Please enter full passcode.</li>
           </ul></div>
-          <div *ngIf="wrongPassCode > 0" class="login-card-validation validation-summary-errors" data-valmsg-summary="true"><ul><li>Invalid passcode</li>
+          <div *ngIf="wrongPassCode > 0" class="login-card-validation validation-summary-errors" data-valmsg-summary="true"><ul><li>Please try again, the passcode was wrong.</li>
           </ul></div>
           <form [formGroup]="loginForm">
             <div class="code-input-div">
@@ -38,7 +38,7 @@
                                 <label class="sh-lable" *ngIf="hide === false">Hide</label>
                             </span>
             </div>
-            <button type="submit" class="btn btn-pri btn-next mr-2" (click)="submit()">Go</button>
+            <button type="button" class="btn btn-pri btn-next mr-2" (click)="submit()">Go</button>
           </form>
         </div>
         <hr>

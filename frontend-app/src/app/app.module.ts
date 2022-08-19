@@ -13,6 +13,7 @@ import { HomeComponent } from './components/home/home.component';
 import { NavComponent } from './components/nav/nav.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { TestsComponent } from './components/tests/tests.component';
+import { MathsMoveThroughComponent } from './components/maths-move-through/maths-move-through.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { TestsComponent } from './components/tests/tests.component';
     HomeComponent,
     NavComponent,
     FooterComponent,
-    TestsComponent
+    TestsComponent,
+    MathsMoveThroughComponent
   ],
   imports: [
     BrowserModule,
