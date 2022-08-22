@@ -4,6 +4,7 @@ import {mockUsers} from "../mock-data/mock-users";
 @Injectable()
 export class LoginService {
   private currentUser = localStorage.getItem('user') || '';
+  private currentPassCode = localStorage.getItem('passCode') || '';
   private loggedInStatus = JSON.parse(localStorage.getItem('loggedIn') || 'false');
 
   setLoggedIn(value: boolean) {
@@ -19,11 +20,17 @@ export class LoginService {
     return localStorage.getItem('user') || this.currentUser.toString();
   }
 
+  get passcode() {
+    return localStorage.getItem('passCode') || this.currentPassCode.toString();
+  }
+
   setCurrentUser(passCode: string) {
     mockUsers.forEach(user => {
       if (user.passCode === passCode) {
         this.currentUser = user.userName;
-        localStorage.setItem('user', `${user.userName}`);
+        this.currentPassCode = user.passCode;
+        localStorage.setItem('passCode', user.passCode)
+        localStorage.setItem('user', user.userName);
       }
     });
   }

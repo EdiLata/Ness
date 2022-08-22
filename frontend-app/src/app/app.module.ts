@@ -14,6 +14,7 @@ import { NavComponent } from './components/nav/nav.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { TestsComponent } from './components/tests/tests.component';
 import { MathsMoveThroughComponent } from './components/maths-move-through/maths-move-through.component';
+import {TestsService} from "./services/tests.service";
 
 @NgModule({
   declarations: [
@@ -33,7 +34,7 @@ import { MathsMoveThroughComponent } from './components/maths-move-through/maths
     MatDialogModule,
     BrowserAnimationsModule,
   ],
-  providers: [LoginService],
+  providers: [LoginService, TestsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
