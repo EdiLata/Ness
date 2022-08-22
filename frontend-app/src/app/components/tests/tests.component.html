@@ -8,7 +8,7 @@
         </div>
         <div class="help-panel-links">
           <div class="row">
-            <a class="col link-widget selectable-card" id="mathsMoveThrough"
+            <a class="col link-widget selectable-card"
                href="/mathsMoveThrough">
               <p>
                 How to move through and answer questions on your Maths test.
@@ -25,94 +25,53 @@
           </p>
         </div>
         <div class="col-10 test-panel-body">
-          <div class="row test-row">
-            <div class="col test-container">
+            <div class="row test-row">
+            <div class="col test-container" *ngFor="let test of tests">
               <div class="test-details">
                 <div class="test-title-icon">
                   <div class="test-title">
                     <p class="test-part">
-                      Part 1:
+                      Part: {{test.part}}
                     </p>
                     <p class="test-name">
-                      Trigonometry
+                      {{test.subject}}
                     </p>
                   </div>
-                  <div class="test-status-icon paused">
+                  <div (click)="pauseTest(test)" *ngIf="!isPaused(test) && test.started === true" class="test-status-icon paused">
+                 </div>
+                  <div (click)="unpauseTest(test)" *ngIf="isPaused(test) && test.started === true && test.status === 'Available'" class="test-status-icon start-enabled">
+                  </div>
+                  <div (click)="startTest(test)" *ngIf="test.started === false && test.status === 'Available'" class="test-status-icon start-enabled">
+                  </div>
+                  <div *ngIf="test.started === false && test.status === 'Unavailable'" class="test-status-icon start-disabled">
                   </div>
                 </div>
-                <p class="test-status">
-                  This test was started on : 17/08/2022
+                <p *ngIf="test.started === true" class="test-status">
+                  This test was started on : {{startTime(test) | date: 'dd MMM yyyy hh:mm a'}}
                 </p>
-                <p class="test-action">
-                  <a id="resume-test" data-test-id="731ade5f-82df-4f40-abf3-0e4a2010af73"
-                     class="btn btn-pri btn-next mr-2 launch-test-btn">
+                <p class="test-status" *ngIf="test.started === false">
+                  {{test.status}}
+                </p>
+                <p *ngIf="test.status === 'Unavailable' && test.part !==1" class="test-action">
+                  Complete 'Part {{test.part - 1}}' to unlock 'Part {{test.part}}'
+                </p>
+                <p class="test-action" *ngIf="test.status === 'Available'">
+                  <a (click)="startTest(test)" *ngIf="test.started === false" class="btn btn-pri btn-next mr-2 launch-test-btn">
+                    Start test
+                  </a>
+                  <a (click)="unpauseTest(test)" *ngIf="isPaused(test) && test.started === true" class="btn btn-pri btn-next mr-2 launch-test-btn">
                     Resume test
+                  </a>
+                  <a (click)="pauseTest(test)" *ngIf="!isPaused(test) && test.started === true" class="btn btn-pri btn-next mr-2 launch-test-btn">
+                    Pause test
                   </a>
                 </p>
               </div>
             </div>
-            <div class="col test-container">
-              <div class="test-details">
-                <div class="test-title-icon">
-                  <div class="test-title">
-                    <p class="test-part">
-                      Part 2:
-                    </p>
-                    <p class="test-name">
-                      Calculus
-                    </p>
-                  </div>
-                  <div class="test-status-icon start-disabled">
-                  </div>
-                </div>
-                <p class="test-status">
-                  Unavailable
-                </p>
-                <p class="test-action">
-                  Complete 'Part 1' to unlock 'Part 2'
-                </p>
-              </div>
-            </div>
-            <div class="col test-container">
-              <div class="test-details">
-                <div class="test-title-icon">
-                  <div class="test-title">
-                    <p class="test-part">
-                      Part 3:
-                    </p>
-                    <p class="test-name">
-                      Combinatorics
-                    </p>
-                  </div>
-                  <div class="test-status-icon start-disabled">
-                  </div>
-                </div>
-                <p class="test-status">
-                  Unavailable
-                </p>
-                <p class="test-action">
-                  Complete 'Part 2' to unlock 'Part 3'
-                </p>
-              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="modal fade" id="confirmStartTest" data-backdrop="static" data-keyboard="false" tabindex="-1"
-           aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content rounded-0">
-            <div class="modal-body ml-4 mr-4" style="text-align: center;">
-              Are you sure you want to start the test?
-            </div>
-            <div class="m-auto pb-3">
-              <button type="button" class="btn btn-ok" id="confirm-start-yes" data-dismiss="modal">Yes</button>
-              <button type="button" class="btn btn-no ml-3" id="confirm-start-no" data-dismiss="modal">No</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </main>
 </div>
 <app-footer></app-footer>
